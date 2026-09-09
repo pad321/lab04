@@ -42,6 +42,14 @@ fun ComponenteCardEjemplo() {
     }
 }
 
+@Composable
+fun ComponenteSliderEjemplo() {
+    androidx.compose.material3.Slider(
+        value = 0.5f,
+        onValueChange = {}
+    )
+}
+
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
