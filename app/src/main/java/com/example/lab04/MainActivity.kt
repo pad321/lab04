@@ -31,11 +31,15 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
+fun ComponenteCardEjemplo() {
+    androidx.compose.material3.Card(
+        modifier = Modifier.padding(16.dp)
+    ) {
+        androidx.compose.material3.Text(
+            text = "Ejemplo de Componente Card",
+            modifier = Modifier.padding(16.dp)
+        )
+    }
 }
 
 @Preview(showBackground = true)
